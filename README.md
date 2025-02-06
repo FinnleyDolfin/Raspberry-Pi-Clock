@@ -50,8 +50,24 @@ Attach the PiSugar 2 battery pack to the Raspberry Pi Zero W to enable portable 
 ## Software Setup
 
 ### 1. Install Raspberry Pi OS
-- Flash Raspberry Pi OS (Lite or Desktop) onto an SD card using a tool like Balena Etcher.
-- Insert the SD card into the Raspberry Pi and boot it up.
+- Download and install the **Raspberry Pi Imager** from the [official Raspberry Pi website](https://www.raspberrypi.com/software/).
+- Insert an SD card into your computer and open the Raspberry Pi Imager.
+- Select your Raspberry Pi Device, assuming Raspberry Pi Zero W.
+- Choose **OS** and select **Raspberry Pi OS (other)**, then select **Raspberry Pi OS Lite**.
+- Select storage.
+- On the next screen, select **Edit Settings** and set:
+  - **Hostname**
+  - **Username and Password**
+  - **Configure the Wireless LAN**
+  - **Wireless LAN Country**
+  - **Locale Settings**
+- Click the **Services** tab and select **Enable SSH with password authentication**.
+- Click **Save** and confirm you wish to overwrite the SD card.
+- Write the OS to the SD card and then insert it into the Raspberry Pi.
+- Boot up the Raspberry Pi and run the following commands to update the system:
+  ```sh
+  sudo apt update && sudo apt upgrade -y
+  ```
 
 ### 2. Enable I2C on the Raspberry Pi
 ```sh

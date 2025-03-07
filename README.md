@@ -1,3 +1,6 @@
+# View the time-lapse here
+https://www.youtube.com/watch?v=Q9yi_VHp-4A
+
 # Guide for Setting Up and Running the Analog Voltmeter Clock
 
 This guide provides step-by-step instructions to set up and run the Analog Voltmeter Clock using a Raspberry Pi Zero W, Adafruit PWM/Servo Bonnet, and analog voltmeters for hours, minutes, and seconds.
